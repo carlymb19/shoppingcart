@@ -1,0 +1,146 @@
+/* Carly Brown - 10/26 */
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    
+    font-size: 16px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: right;
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+    padding: 0.5em;
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+}
+
+div.container {
+    min-height: 30vh;
+    max-height: 50vh;
+    padding: 1em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(136, 176, 191, 0.5);
+}
+
+#image img {
+    max-height: 20vh;
+    width: auto;
+}
+
+#adoptable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+#adoptable .fox-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+}
+
+#adoptable img {
+    max-height: 50vw;
+    width: auto;
+}
+
+#adoptable .fox-name,
+#adoptable .fox-description,
+#adoptable .fox-price {
+    text-align: center; 
+    margin: 10px 0 0 0;
+}
+
+#adoptable .fox-name {
+    font-weight: bold;
+}
+
+.fox-container button {
+    margin: 10px 0 0 0;
+}
+
+.shoppingcart {
+    background-color: rgba(151, 166, 160, 0.5);
+    padding: 2em;
+}
+
+.cart-row {
+    display: flex;
+    align-items: center;
+}
+
+.remove-button {
+    margin-left: 10px; /* Adjust this margin according to your design */
+}
+
+select {
+    margin-top: .5em;
+}
+
+#cartTotal {
+    margin-top: 1.5em;
+}
+
+@media (min-width: 500px) {
+    div.container {
+        min-height: 50vh;
+        max-height: 80vh;
+        overflow: hidden; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #image img {
+        max-height: 30vh;
+        width: auto;
+    }
+}
+
+@media (min-width: 768px){
+    #image img {
+        max-height: 40vh;
+        width: auto;
+    }
+
+    #adoptable img {
+        max-height: 20vw;
+        width: auto;
+    }
+}
+
+@media (min-width: 1080px){
+    #adoptable img {
+        max-height: 15vw;
+        width: auto;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Carly Brown - 10/26 -->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <meta name="author" content="Carly Brown">
+        <title>Final Project</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Fabulous Fox Friends</h1>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Foxes that have been adopted:</h2>
+                <div id="image"></div>
+                    <p>Adopted: <span id="adoptDate"></span></p>
+                <button id="generateAdoption">View More</button>
+            </div>
+
+            <h2 class="center">Adopt yours:</h2> 
+            <div id="adoptable"></div>
+
+            <div class="shoppingcart">
+                <h2>Cart</h2>
+                <div id="cart"></div>
+
+                <p class="bold">Optional:</p>
+                <label for="supplies">Start your fox's new life off right:</label><br>
+                    <select name="supplies" id="supplies">
+                        <option value="0" data-cost="0">None</option>
+                        <option value="150" data-cost="150">Four weeks supplies</option> 
+                        <option value="300" data-cost="300">Eight weeks supplies</option> 
+                        <option value="450" data-cost="450">Twelve weeks supplies</option> 
+                    </select>
+                <div id="cartTotal"></div>
+            </div>
+        </main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
